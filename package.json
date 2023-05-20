@@ -1,4 +1,5 @@
 {
+  "home": "https://vigonin83.github.io/youRided/",
   "name": "e-scooter-shop",
   "version": "0.1.0",
   "private": true,
@@ -6,6 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "next lint"
   },
   "dependencies": {
@@ -24,6 +27,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "sass": "^1.62.1"
   }
 }
