@@ -1,0 +1,89 @@
+@import '../../../assets/styles/variable';
+
+.sliderWrapper {
+   margin-bottom: 3rem;
+   :global(.swiper-pagination .swiper-pagination-bullet) {
+      background-color: $fontColor;
+      opacity: 0.5;
+      top: 0;
+      margin-bottom: 0.7rem;
+      width: 15px;
+      height: 15px;
+   }
+
+   :global(.swiper-button-prev) {
+      color: $fontColor;
+      opacity: 0.5;
+   }
+
+   :global(.swiper-button-next) {
+      color: $fontColor;
+      opacity: 0.5;
+   }
+}
+
+.content {
+   position: absolute;
+   top: 18%;
+   left: 11%;
+   max-width: 39rem;
+}
+
+.title {
+   text-transform: uppercase;
+   font-size: 3.8rem;
+   line-height: 1.2em;
+   font-weight: 400;
+   margin-bottom: 1rem;
+
+   & span {
+      font-weight: 800;
+   }
+}
+
+.subTitle {
+   text-transform: uppercase;
+   font-weight: 800;
+   font-size: 1.1rem;
+   margin-bottom: 1.5rem;
+}
+
+.discount {
+   text-transform: uppercase;
+   font-size: 3rem;
+   margin-bottom: 2rem;
+   & span {
+      font-weight: 800;
+   }
+}
+
+.slideThreeWrapper {
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+   top: 18%;
+   left: 50%;
+}
+
+.slideThreeContent {
+   max-width: 700px;
+}
+
+.threeSlideTitle {
+   text-transform: uppercase;
+   font-size: 3rem;
+   line-height: 1.2em;
+   font-weight: 400;
+   margin-bottom: 1.5rem;
+   & span {
+      font-weight: 800;
+   }
+}
+.threeSlideDiscount {
+   text-transform: uppercase;
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+   & span {
+      font-weight: 800;
+   }
+}

@@ -1,0 +1,50 @@
+@import '@/assets/styles/variable';
+
+.layout {
+   max-width: 330px;
+   height: 220px;
+   border-radius: 10px;
+   overflow: hidden;
+   margin-bottom: 0.8rem;
+   transition: all, 0.4s, ease-out, 0.5s;
+   color: $fontColor;
+
+   &:hover {
+      color: #fff;
+   }
+
+}
+
+.wrapper {
+   position: relative;
+   &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 25%;
+      left: 0;
+      background-image: linear-gradient(to left, $mainColor, $mainColor);
+   }
+}
+
+
+.link {
+   color: $fontColor;
+
+   &:hover {
+      color: #fff;
+
+   }
+}
+
+
+.content {
+   position: absolute;
+   top: 28%;
+   left: 50%;
+   transform: translateX(-50%);
+   white-space: nowrap;
+   z-index: 5;
+
+}

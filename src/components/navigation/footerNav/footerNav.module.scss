@@ -1,0 +1,49 @@
+@import '@/assets/styles/variable';
+.layout {
+   border-bottom: 1px solid #9c9c9c38;
+}
+
+.container {
+   max-width: 1220px;
+   padding: 0 10px;
+   margin: 0 auto;
+}
+
+.wrapper {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 1rem;
+}
+
+.linksContainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   row-gap: 1.5rem;
+   margin-bottom: 1.5rem;
+}
+
+.title {
+   margin-bottom: 1.5rem;
+}
+
+.phoneContainer {
+   display: flex;
+   align-items: center;
+
+   & span {
+      margin-left: 0.8rem;
+   }
+}
+
+.list {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   row-gap: 1.5rem;
+}
+
+.list li {
+   // color: $mainColor;
+   font-weight: 300;
+}

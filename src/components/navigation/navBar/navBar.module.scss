@@ -1,0 +1,50 @@
+@import '../../../assets/styles/variable';
+
+.section {
+   background-color: $mainColor;
+   font-weight: 700;
+   line-height: 0;
+   white-space: nowrap;
+}
+
+.container {
+   max-width: 1220px;
+   padding: 0 10px;
+   margin: 0 auto;
+}
+
+.wrapper {
+   display: flex;
+   justify-content: center;
+   text-transform: uppercase;
+
+}
+
+.item {
+   align-self: center;
+   padding: 1rem 2rem;
+   position: relative;
+   padding: 24px;
+
+   &:after {
+      content: "";
+      position: absolute;
+      top: 20%;
+      right: 0;
+      background-color: #ddbd06;
+      width: 0.9px;
+      height: 60%;
+   }
+
+   &:last-child {
+      &:after {
+         content: none;
+      }
+   }
+}
+
+.item a {
+   &:hover {
+      color: $hoverMenuColor;
+   }
+}

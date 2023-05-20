@@ -1,0 +1,43 @@
+@import '../../assets/styles/variable';
+
+.main {
+   font-size: 0.93em;
+   border-bottom: 0.8px solid rgb(239, 239, 239);
+   padding: 12px 0;
+}
+.container {
+   max-width: 1220px;
+   padding: 0 10px;
+   margin: 0 auto;
+}
+.wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+.items {
+   display: inline-flex;
+   padding-right: 24px;
+}
+
+.account {
+   display: inline-flex;
+}
+
+.link {
+   display: flex;
+   align-items: center;
+   color: $mainColor;
+}
+.text {
+   color: $fontColor;
+   margin-left: 0.3rem;
+   &:hover {
+      color: $mainColor;
+      transition: $main-transition;
+   }
+}
+.tel {
+  margin-left: 0.3rem;
+}
